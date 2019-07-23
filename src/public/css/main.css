@@ -1,0 +1,16 @@
+.login{
+    background: url('../imgpage/cover.jpg') no-repeat center top;
+    background: -webkit-linear-gradient(to right #a8e063 #56ab2f);
+    background: linear-gradient(to right #a8e063 #56ab2f);
+} 
+
+.signup{
+    background: url('../imgpage/cover.jpg') no-repeat center top;
+    background: -webkit-linear-gradient(to right #004e92 #000428);
+    background: linear-gradient(to right #004e92 #000428);
+}
+
+.lookVideo{
+    width: 100%;
+    height: 200%;
+}

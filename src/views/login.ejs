@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <% include partials/header%>
+</head>
+<body class="login">
+    <div class="container">
+        <div class="col-sm-6 mx-auto">
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h1 class="text-center">
+                        <span class="fa fa-sign-in"></span> Login
+                    </h1>
+
+                        <% if(message.length > 0) {%>
+                            <div class="alert alert-danger">
+                                <%=message %>
+                            </div>
+                        <% } %>
+                    
+                    <form action="/login" method="post">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" class="form-control">
+                            <label for="password">password</label>
+                            <input type="password" name="password" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-block">Login</button>
+                    </form>
+
+                    <hr>
+                    <div class="text-center">
+                        <p>Need an account? <a href="/signup">signup</a> </p>
+                        <p>Or go <a href="/">Home</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
